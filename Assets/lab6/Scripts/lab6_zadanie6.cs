@@ -12,7 +12,15 @@ public class lab6_zadanie6 : MonoBehaviour{
     {
         if (hit.gameObject.CompareTag("ENEMY"))
         {
-            print("Wykryto kolizje gracza z przeszkod¹");
+            //print("Wykryto kolizje gracza z przeszkod¹");
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.transform.root.CompareTag("ENEMY"))
+        {
+            print("Pocz¹tek kolizji z przeszkod¹");
         }
     }
 }

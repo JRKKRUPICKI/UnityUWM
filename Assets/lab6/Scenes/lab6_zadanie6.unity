@@ -3772,6 +3772,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6917054790589005697, guid: 9e71c856c08246746890de7ee8d44f88, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8532412750484078443, guid: 9e71c856c08246746890de7ee8d44f88, type: 3}
       propertyPath: m_Name
       value: Przeszkoda (1)
