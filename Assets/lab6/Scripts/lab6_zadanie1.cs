@@ -27,10 +27,16 @@ public class lab6_zadanie1 : MonoBehaviour{
     }
 
     private void OnTriggerEnter(Collider other){
-        if (other.gameObject.CompareTag("PLAYER")) isRunning = true;
+        if (other.gameObject.CompareTag("PLAYER")){
+            isRunning = true;
+            other.gameObject.transform.parent = gameObject.transform;
+        }
     }
 
     private void OnTriggerExit(Collider other){
-        if (other.gameObject.CompareTag("PLAYER")) isRunning = false;
+        if (other.gameObject.CompareTag("PLAYER")){
+            isRunning = false;
+            other.gameObject.transform.parent = null;
+        }
     }
 }
